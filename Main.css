@@ -1,0 +1,170 @@
+/*
+Лабораторная работа 2 по дисциплине ЛОИС
+гр. 721702
+Выполнил студент: Войтеховский Евгений
+Вариант8: построить — СКНФ для заданной формулы.
+Источник основного кода: Лабораторная работа 2 по дисциплине ЛОИС Икбаева Е. 
+*/
+body {
+ margin: auto;
+ background: #90EE90;
+}
+#true {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .3em 1em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FF4500;
+  border-radius: 3px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+  position: fixed;
+  top: 25px;
+  left: 220px;
+  width: 100px;
+    height: 30px;
+} 
+#true:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+#true:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+#false {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .3em 1em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FF4500;
+  border-radius: 3px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+  position: fixed;
+  top: 25px;
+  left: 335px;
+  width: 100px;
+    height: 30px;
+} 
+#false:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+#talse:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+#question{
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid#40382D;
+    margin-top: 10px;
+    text-decoration: none;
+    position: fixed;
+    top: 12px;
+    left: 5px;
+}
+#suggestion{
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid#40382D;
+    margin-top: 10px;
+    text-decoration: none;
+    position: fixed;
+    top: 80px;
+    left: 5px;
+}
+#formula{
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid#40382D;
+    margin-top: 10px;
+    text-decoration: none;
+    position: fixed;
+    top: 150px;
+    left: 5px;
+}
+
+#resultQuestion{
+	position: fixed;
+    top: 17px;
+    left: 550px;
+}
+#generatedResults{
+	position: fixed;
+    top: 40px;
+    left: 550px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+text-align: left;
+border-collapse: separate;
+border-spacing: 5px;
+background: #ECE9E0;
+color: #656665;
+border: 16px solid #ECE9E0;
+border-radius: 20px;
+}
+th {
+font-size: 18px;
+padding: 10px;
+}
+td {
+background: #F5D7BF;
+padding: 10px;
+}
+
+
+
+#calculate{
+	display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .3em 1em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #0000FF;
+  border-radius: 3px;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  transition: 0.2s;
+  position: fixed;
+  top: 165px;
+  left: 220px;
+  width: 100px;
+    height: 30px;
+}
+#result{
+	position: fixed;
+    top: 200px;
+    left: 15px;
+}
+#truthTable{
+	position: fixed;
+    top: 260px;
+    left: 15px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+text-align: left;
+border-collapse: separate;
+border-spacing: 5px;
+background: #ECE9E0;
+color: #656665;
+border: 16px solid #ECE9E0;
+border-radius: 20px;
+}
+#trtable{
+	position: fixed;
+    top: 235px;
+    left: 15px;
+}
+#quest{
+	position: fixed;
+    top: 3px;
+    left: 5px;
+}
+#suggest{
+	position: fixed;
+    top: 70px;
+    left: 5px;
+}

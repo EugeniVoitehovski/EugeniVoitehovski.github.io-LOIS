@@ -1,0 +1,55 @@
+<!--
+Лабораторная работа 2 по дисциплине ЛОИС
+гр. 721702
+Выполнил студент: Войтеховский Евгений
+Вариант8: построить — СКНФ для заданной формулы.
+Источник основного кода: Лабораторная работа 2 по дисциплине ЛОИС Икбаева Е.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab 2</title>
+
+        <link rel="stylesheet" type="text/css" href="Main.css" />
+
+    <script src="formulaCalculator.js"></script>
+    <script src="formulaTranslator.js"></script>
+    <script src="index.js"></script>
+    <script src="lexemeParser.js"></script>
+    <script src="pcnfBuilder.js"></script>
+    <script src="rpnTranslator.js"></script>
+    <script src="sourceDataGenerator.js"></script>
+    <script src="testMode.js"></script>
+    <script src="truthTableGenerator.js"></script>
+    <script type="text/javascript">
+        window.onload = generateQuestion;
+    </script>
+</head>
+<body>
+    <span id="quest">Question:</span>
+    <input id="question" />
+    <br>
+   <span id="suggest">Suggestion:</span>
+    <input id="suggestion" />
+    <button id = "true" onclick="clickTrue()">SKNF</button>
+    <button id = "false" onclick="clickFalse()">!SKNF</button>
+    <span id="resultQuestion"></span>
+    <table id="generatedResults" border="1">
+        <tr>
+            <td>Formula</td>
+            <td>SKNF</td>
+            <td>True answer</td>
+            <td>Your answer</td>
+        </tr>
+    </table>
+    <br>
+    <input id="formula" />
+    <button id ="calculate" onclick="calculate()">Build SKNF</button>
+    <br>
+    <span id="result">Result</span>
+    <br>
+    <span id="trtable">Table</span>
+    <br>
+    <table id="truthTable" border="1"></table>
+</body>
+</html>
